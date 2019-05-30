@@ -1,0 +1,9 @@
+<p>
+  Zacznij programować z naszymi kursami !
+</p>
+<ul>
+  <li *ngFor="let c of courses">
+    {{c.title}}
+    <button [routerLink]="[c.id]">Więcej</button>
+  </li>
+</ul>
